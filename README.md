@@ -19,8 +19,8 @@ Requisitos: **Python 3.9 o superior** (comprobar con `python --version`).
 **1. Descargar el proyecto**
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPO.git
-cd TU_REPO
+git clone https://github.com/ortizzx2/Practica-Scrapping.git
+cd Practica-Scrapping
 ```
 
 **2. (Recomendado) Crear un entorno virtual**
