@@ -12,13 +12,48 @@ Scraping de [Books to Scrape](http://books.toscrape.com) (web creada para practi
 | `app.py` | Parte 2: dashboard con Streamlit |
 | `requirements.txt` | Dependencias |
 
-## Cómo ejecutarlo
+## Cómo arrancar la práctica
+
+Requisitos: **Python 3.9 o superior** (comprobar con `python --version`).
+
+**1. Descargar el proyecto**
+
+```bash
+git clone https://github.com/TU_USUARIO/TU_REPO.git
+cd TU_REPO
+```
+
+**2. (Recomendado) Crear un entorno virtual**
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+source .venv/bin/activate     # Mac / Linux
+```
+
+**3. Instalar las dependencias**
 
 ```bash
 pip install -r requirements.txt
-python scraper.py          # opcional: los CSV ya están incluidos
+```
+
+**4. Parte 1 - Ejecutar el scraping** (genera `libros.csv` y `precios.csv`)
+
+```bash
+python scraper.py
+```
+
+Tarda unos 2 minutos porque espera 1 segundo entre peticiones (~100 en total). Este paso es opcional: los CSV ya están incluidos en el repositorio.
+
+**5. Parte 2 - Lanzar el dashboard**
+
+```bash
 streamlit run app.py
 ```
+
+Se abre automáticamente en el navegador en `http://localhost:8501`. Para cerrarlo, pulsa `Ctrl + C` en la terminal.
+
+> Los CSV deben estar en la misma carpeta que `app.py`; ejecuta los comandos desde la carpeta del proyecto.
 
 ## Ética y buenas prácticas
 
